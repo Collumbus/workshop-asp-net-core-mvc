@@ -44,7 +44,7 @@ namespace SalesWebMvc.Services
             catch(DbUpdateException e)
             {
                 //return RedirectToAction(nameof(Error), new { message = e.Message });
-                throw new IntegrityException("Can't delete seller because he/she das sales");
+                throw new IntegrityException("Can't delete seller because he/she has sales");
             }
         }
 
